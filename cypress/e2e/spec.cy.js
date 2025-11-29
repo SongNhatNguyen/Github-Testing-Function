@@ -42,4 +42,13 @@ describe('Calculator Functionality', () => {
     cy.get('#display').should('have.value', '5');
   });
 
+  it('5E3 = 5000 ?', () => {
+  cy.get('#btn-5').click();
+  cy.get('#btn-e').click();
+  cy.get('#btn-3').click();
+  cy.get('#btn-equal').click();
+
+  cy.get('#display').should('have.value', '5000');
+});
+
 });
