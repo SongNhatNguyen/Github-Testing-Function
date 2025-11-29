@@ -72,6 +72,7 @@ export default function Calculator() {
         <button id="btn-div" onClick={() => click("/")}>/</button>
         <button id="btn-clear" onClick={clear}>C</button>
         <button id="btn-equal" onClick={calculate}>=</button>
+        <button id="btn-e" onClick={() => click("E")}>E</button>
     </div>
     </div>
   );
